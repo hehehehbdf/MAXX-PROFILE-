@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MAXX | WhatsApp Contact</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins, sans-serif;
+}
+
+body{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:linear-gradient(-45deg,#0f2027,#203a43,#2c5364,#000000);
+background-size:400% 400%;
+animation:bgMove 12s infinite linear;
+color:white;
+overflow:hidden;
+}
+
+@keyframes bgMove{
+0%{background-position:0% 50%}
+50%{background-position:100% 50%}
+100%{background-position:0% 50%}
+}
+
+/* Card */
+
+.card{
+text-align:center;
+background:rgba(255,255,255,0.05);
+padding:45px;
+border-radius:25px;
+backdrop-filter:blur(15px);
+border:1px solid rgba(255,255,255,0.2);
+box-shadow:0 0 40px rgba(0,255,255,0.3);
+animation:float 4s infinite ease-in-out;
+}
+
+@keyframes float{
+0%{transform:translateY(0)}
+50%{transform:translateY(-12px)}
+100%{transform:translateY(0)}
+}
+
+/* Profile */
+
+.pfp{
+width:120px;
+height:120px;
+border-radius:50%;
+border:3px solid #25D366;
+margin-bottom:15px;
+box-shadow:0 0 25px #25D366;
+}
+
+/* Name */
+
+h1{
+font-size:32px;
+letter-spacing:4px;
+margin-bottom:8px;
+background:linear-gradient(90deg,#00f2fe,#4facfe);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+text-shadow:0 0 20px rgba(0,255,255,0.7);
+}
+
+/* Status */
+
+.status{
+font-size:13px;
+color:#aaa;
+margin-bottom:20px;
+}
+
+/* Number */
+
+.number{
+color:#25D366;
+margin-bottom:25px;
+font-size:15px;
+}
+
+/* Button */
+
+.btn{
+display:inline-block;
+padding:14px 32px;
+border-radius:35px;
+background:linear-gradient(45deg,#25D366,#128C7E);
+color:white;
+text-decoration:none;
+font-size:16px;
+transition:0.3s;
+box-shadow:0 0 20px #25D366;
+}
+
+.btn:hover{
+transform:scale(1.1);
+box-shadow:0 0 40px #25D366;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+<img src="https://i.supaimg.com/20a17276-cffe-43a3-9acb-1773af708080/41b01368-a3d0-4c4a-ab68-4a262494fdde.jpg" class="pfp">
+
+<h1>MAXX</h1>
+
+<div class="status">Professional Contact</div>
+
+<div class="number">WhatsApp : +91 9899938273</div>
+
+<a href="https://wa.me/919899938273" class="btn">Chat on WhatsApp</a>
+
+</div>
+
+</body>
+</html>
